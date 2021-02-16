@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class Faq extends React.Component {
+    render() {
+        return(
+            
+            <main>
+                {/* How many team members can I invite? You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan. What is the maximum file upload size? No more than 2GB. All files in your account must fit your allotted storage space. How do I reset my password? Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you. Can I cancel my subscription? Yes! Send us a message and we’ll process your request no questions asked. Do you provide additional support? Chat and email support is available 24/7. Phone lines are open during normal business hours. */}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+                <h1>Faq</h1>
+
+                <ul>
+                    <li>How many team members can I invite?</li>
+                    <li>What is the maximum file upload size?</li>
+                    <li>How do I reset my password?</li>
+                    <li>Can I cancel my subscription?</li>
+                    <li>Do you provide additional support?</li>
+                </ul>
+            </main>
+            
+        )
+    }
+}
+
+
+ReactDOM.render(<Faq />, document.getElementById("root"));
