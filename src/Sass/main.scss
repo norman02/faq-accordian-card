@@ -1,1 +1,14 @@
 @import "reset";
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+    .faq {
+        background-color: white;
+    }
+}
