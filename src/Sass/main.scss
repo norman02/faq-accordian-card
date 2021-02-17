@@ -19,6 +19,7 @@ main {
         font-weight: 400;
         font-size: 12px;
         color: hsl(237, 12%, 33%);
+        box-shadow: 0 50px 50px hsla(260, 85, 48, 50%);
 
         h1 {
             margin-top: 133px;
@@ -31,10 +32,15 @@ main {
 
         ul {
             li {
-                padding-right: 46px;
-                padding-bottom: 24px;
-                padding-top: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 24px 0px;
                 border-bottom: 2px solid hsl(240, 5%, 91%);
+            }
+
+            img {
+                margin-left: 24px;
             }
         }
     }

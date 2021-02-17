@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './css/main.css'
+import downArrow from './images/icon-arrow-down.svg'
 
 
 
@@ -39,11 +40,11 @@ class App extends React.Component {
                 <div className="faq">
                     <h1>Faq</h1>
                     <ul>
-                        <li>How many team members can I invite? </li>
-                        <li>What is the maximum file upload size?</li>
-                        <li>How do I reset my password?</li>
-                        <li>Can I cancel my subscription?</li>
-                        <li>Do you provide additional support?</li>
+                        <li>How many team members can I invite? <img src={downArrow} alt='arrow'/> </li>
+                        <li>What is the maximum file upload size?<img src={downArrow} alt='arrow'/></li>
+                        <li>How do I reset my password?<img src={downArrow} alt='arrow'/></li>
+                        <li>Can I cancel my subscription?<img src={downArrow} alt='arrow'/></li>
+                        <li>Do you provide additional support?<img src={downArrow} alt='arrow'/></li>
                     </ul>
                 </div>
 
