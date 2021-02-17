@@ -30,7 +30,7 @@ const questions = [
 
 const faqs = questions.map((question) => {
     return (
-        <li>
+        <li key={question.question} className="question">
             {question.question}
             {arrow}
         </li>
@@ -43,6 +43,7 @@ class App extends React.Component {
     render() {
         return (
             <main>
+                <div className="graphic"></div>
                 <div className="faq">
                     <h1>Faq</h1>
                     <ul>

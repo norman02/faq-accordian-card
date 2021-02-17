@@ -11,8 +11,23 @@ main {
     justify-content: center;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 
+    .graphic {
+        z-index: 10;
+        display: block;
+        width: 100%;
+        height: 180px;
+        margin-bottom: -84px;
+        background-image: url('../images/illustration-woman-online-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
     .faq {
         background-color: white;
+        background-image: url('../images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center top;
         border-radius: 23px;
         padding: 47px 24px;
         font-family: 'Kumbh Sans', sans-serif;
@@ -22,8 +37,8 @@ main {
         box-shadow: 0 50px 50px hsla(260, 85, 48, 50%);
 
         h1 {
-            margin-top: 133px;
-            margin-bottom: 38px;
+            margin-top: 80px;
+            margin-bottom: 20px;
             text-transform: uppercase;
             text-align: center;
             font-size: 32px;
