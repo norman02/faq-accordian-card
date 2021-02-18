@@ -134,6 +134,10 @@ main .faq ul li .answer {
   color: #787887;
 }
 
+main .faq ul li :hover {
+  color: #f47c57;
+}
+
 main .faq ul li .inactive {
   display: none;
 }

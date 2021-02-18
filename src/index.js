@@ -31,13 +31,12 @@ const questions = [
 const faqs = questions.map((question) => {
     return (
         <li key={question.question} className="question">
-            <div className='question'>
+            <submit aria-label='select and display answer' className='question'>
                 {question.question}
-                {arrow}
-            </div>
+                {arrow}  
+            </submit>
             <p className='answer inactive'>{question.answer}</p>
         </li>
-
     )
 
 })

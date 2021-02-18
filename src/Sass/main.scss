@@ -63,7 +63,15 @@ main {
                     margin-top: 15px;
                     line-height: 18px;
                     color: hsl(240, 6%, 50%);
+
+                                       
                 }
+
+                :hover {
+                    color: hsl(14, 88%, 65%);
+                } 
+
+                
 
                 .inactive {
                     display: none;
