@@ -8,11 +8,11 @@ const arrow = <img src={downArrow} alt='arrow' />
 const questions = [
     {
         question: 'How many team members can I invite?',
-        answer: 'I invite? You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.',
+        answer: 'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.',
     },
     {
         question: 'What is the maximum file upload size?',
-        answer: 'What is the maximum file upload size? No more than 2GB. All files in your account must fit your allotted storage space.',
+        answer: 'No more than 2GB. All files in your account must fit your allotted storage space.',
     },
     {
         question: 'How do I reset my password?',
@@ -31,9 +31,13 @@ const questions = [
 const faqs = questions.map((question) => {
     return (
         <li key={question.question} className="question">
-            {question.question}
-            {arrow}
+            <div className='question'>
+                {question.question}
+                {arrow}
+            </div>
+            <p className='answer inactive'>{question.answer}</p>
         </li>
+
     )
 
 })

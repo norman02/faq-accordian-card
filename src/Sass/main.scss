@@ -4,7 +4,6 @@
 
 main {
     height: 100vh;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +23,8 @@ main {
     }
 
     .faq {
+        max-height: 70%;
+        overflow-y: scroll;
         background-color: white;
         background-image: url('../images/bg-pattern-mobile.svg');
         background-repeat: no-repeat;
@@ -47,11 +48,26 @@ main {
 
         ul {
             li {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                max-width: 280px;
                 padding: 24px 0px;
                 border-bottom: 2px solid hsl(240, 5%, 91%);
+
+                .question {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .answer {
+                    max-width: 80%;
+                    margin-top: 15px;
+                    line-height: 18px;
+                    color: hsl(240, 6%, 50%);
+                }
+
+                .inactive {
+                    display: none;
+                }
             }
 
             img {
