@@ -1,0 +1,6 @@
+@mixin font($size, $weight, $line-height) {
+    font-size: toRem($size) ;
+    font-weight: $weight;
+    line-height: toRem($line-height);
+    font-family: 'Kumbh Sans', sans-serif; 
+}
