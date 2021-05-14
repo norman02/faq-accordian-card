@@ -3,22 +3,45 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background: transparent linear-gradient(180deg, $violet 0%, $indigo 100%) 0% 0% no-repeat padding-box; 
+    background: transparent linear-gradient(180deg, $violet 0%, $indigo 100%) 0% 0% no-repeat padding-box;
+    @include media-md{
+        align-items: center;
+    } 
+    
 }
+
 
 main {
     margin-top: toRem(40);
     max-width: toRem(327);
+    @include media-md {
+        margin: 0 auto;
+        max-width: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .image-container {
         position: relative;
         height: toRem(200);
-        width: 100%;
         background-image: url('../images/illustration-woman-online-mobile.svg');
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: toRem(-90);
         z-index: 10;
         opacity: 2;
+        @include media-md {
+            margin: 0;
+            width: toRem(310);
+            margin-right: toRem(-200);
+        }
+        @include media-lg {
+            background-image: url('../images/illustration-box-desktop.svg'), url('../images/illustration-woman-online-desktop.svg') ;
+            background-position: toRem(200) toRem(125), top;
+            width: toRem(900);
+            height: toRem(500);
+            margin-right: toRem(-600);
+        }
     }
     .content-container {
         z-index: 1;
@@ -28,13 +51,51 @@ main {
         background-position: top center;
         background-repeat: no-repeat;
         border-radius: 23px;
-        box-shadow: 0px 50px 50px $shadow; 
+        box-shadow: 0px 50px 50px $shadow;
+
+        @include media-md {
+            background-position: -15% 65%;
+
+            .acordian {
+                padding-left: toRem(275);
+            }
+        }
+
+        @include media-lg {
+            padding: 0;
+
+            background-image: url('../images/bg-pattern-desktop.svg');
+            background-position: 0;
+            background-position: -555px -350px;
+
+            .acordian {
+                padding-top: 39px;
+                padding-right: toRem(95);
+                padding-bottom: toRem(83);
+                padding-left: toRem(457);
+            }
+        }
+
+
+        
 
         h1 {
             @include font(32, 700 , 32);
             color: #1E1F36;
             margin-top: toRem(63);
             text-align: center;
+
+            @include media-md {
+                margin-top: 0;
+                padding-left: toRem(275);
+                text-align: left;
+            }
+
+            @include media-lg {
+                padding-top: toRem(65);
+                padding-left: toRem(455);
+            }
         }
+
     }
 }

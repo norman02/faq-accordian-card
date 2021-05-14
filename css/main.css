@@ -113,21 +113,54 @@ body {
   background: transparent linear-gradient(180deg, #B068E9 0%, #6463E7 100%) 0% 0% no-repeat padding-box;
 }
 
+@media screen and (min-width: 800px) {
+  body {
+    align-items: center;
+  }
+}
+
 main {
   margin-top: 2.5rem;
   max-width: 20.4375rem;
 }
 
+@media screen and (min-width: 800px) {
+  main {
+    margin: 0 auto;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 main .image-container {
   position: relative;
   height: 12.5rem;
-  width: 100%;
   background-image: url("../images/illustration-woman-online-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: -5.625rem;
   z-index: 10;
   opacity: 2;
+}
+
+@media screen and (min-width: 800px) {
+  main .image-container {
+    margin: 0;
+    width: 19.375rem;
+    margin-right: -12.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main .image-container {
+    background-image: url("../images/illustration-box-desktop.svg"), url("../images/illustration-woman-online-desktop.svg");
+    background-position: 12.5rem 7.8125rem, top;
+    width: 56.25rem;
+    height: 31.25rem;
+    margin-right: -37.5rem;
+  }
 }
 
 main .content-container {
@@ -141,6 +174,30 @@ main .content-container {
   box-shadow: 0px 50px 50px #35127A7F;
 }
 
+@media screen and (min-width: 800px) {
+  main .content-container {
+    background-position: -15% 65%;
+  }
+  main .content-container .acordian {
+    padding-left: 17.1875rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main .content-container {
+    padding: 0;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: 0;
+    background-position: -555px -350px;
+  }
+  main .content-container .acordian {
+    padding-top: 39px;
+    padding-right: 5.9375rem;
+    padding-bottom: 5.1875rem;
+    padding-left: 28.5625rem;
+  }
+}
+
 main .content-container h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -149,5 +206,20 @@ main .content-container h1 {
   color: #1E1F36;
   margin-top: 3.9375rem;
   text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  main .content-container h1 {
+    margin-top: 0;
+    padding-left: 17.1875rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main .content-container h1 {
+    padding-top: 4.0625rem;
+    padding-left: 28.4375rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
