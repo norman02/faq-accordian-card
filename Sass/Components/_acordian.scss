@@ -37,6 +37,7 @@
         .question {
             @include font (14, 700, 15);
             color: $dark-blue;
+            background-image: url('../images/icon-arrow-up.svg');
         }
 
         .answer {

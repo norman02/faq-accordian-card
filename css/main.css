@@ -99,6 +99,7 @@ table {
   line-height: 0.9375rem;
   font-family: 'Kumbh Sans', sans-serif;
   color: #1E1F36;
+  background-image: url("../images/icon-arrow-up.svg");
 }
 
 .acordian .active .answer {
