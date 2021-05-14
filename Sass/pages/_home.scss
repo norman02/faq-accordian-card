@@ -36,31 +36,5 @@ main {
             margin-top: toRem(63);
             text-align: center;
         }
-
-        ul {
-            margin-top: toRem(21);
-
-            li {
-                padding-top: toRem(17);
-                padding-bottom: toRem(21);
-                padding-right: toRem(43);
-                border-bottom: 1px solid $offwhite;
-                background-image: url('../images/icon-arrow-down.svg');
-                background-repeat: no-repeat;
-                background-position: right;
-
-                .question {
-                    @include font(13, 400, 13);
-                    color: $dark-gray;
-                }
-
-                .answer {
-                    @include font(12, 400, 18);
-                    margin-top: toRem(15);
-                    color: $gray;
-                    display: none;
-                }
-            }
-        }
     }
 }
