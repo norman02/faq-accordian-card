@@ -60,22 +60,30 @@ table {
 .acordian li {
   padding-top: 1.0625rem;
   padding-bottom: 1.3125rem;
-  padding-right: 2.6875rem;
   border-bottom: 1px solid #E8E8EA;
+  cursor: pointer;
+  color: #4B4C5F;
+}
+
+.acordian li:hover {
+  color: #F47B56;
+}
+
+.acordian li p {
+  padding-right: 2.6875rem;
+}
+
+.acordian .question {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 0.8125rem;
+  font-family: 'Kumbh Sans', sans-serif;
   background-image: url("../images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.acordian li .question {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 0.8125rem;
-  font-family: 'Kumbh Sans', sans-serif;
-  color: #4B4C5F;
-}
-
-.acordian li .answer {
+.acordian .answer {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.125rem;
@@ -83,6 +91,18 @@ table {
   margin-top: 0.9375rem;
   color: #787887;
   display: none;
+}
+
+.acordian .active .question {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #1E1F36;
+}
+
+.acordian .active .answer {
+  display: block;
 }
 
 body {

@@ -4,22 +4,43 @@
     li {
         padding-top: toRem(17);
         padding-bottom: toRem(21);
-        padding-right: toRem(43);
-        border-bottom: 1px solid $offwhite;
+        border-bottom: 1px solid $offwhite;     
+        cursor: pointer;
+        color: $dark-gray;
+            &:hover {
+                color: $red;
+            }  
+
+        p {
+            padding-right: toRem(43);
+        }
+    }
+
+    .question {
+        @include font(13, 400, 13); 
         background-image: url('../images/icon-arrow-down.svg');
         background-repeat: no-repeat;
         background-position: right;
+    }
 
+    .answer {
+        @include font(12, 400, 18);
+        margin-top: toRem(15);
+        color: $gray;
+        display: none;
+
+        
+    }
+
+    .active {
         .question {
-            @include font(13, 400, 13);
-            color: $dark-gray;
+            @include font (14, 700, 15);
+            color: $dark-blue;
         }
 
         .answer {
-            @include font(12, 400, 18);
-            margin-top: toRem(15);
-            color: $gray;
-            display: none;
+            display: block;
         }
     }
+
 }
