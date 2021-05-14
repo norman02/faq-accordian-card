@@ -71,6 +71,7 @@ table {
 
 .acordian li p {
   padding-right: 2.6875rem;
+  max-width: 15.625rem;
 }
 
 .acordian .question {
